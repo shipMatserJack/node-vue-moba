@@ -12,19 +12,19 @@ const schema = new mongoose.Schema({
     survive: {type: Number}
   },
   skills: [{
-    icon: {tyep: String},
-    name: {tyep: String},
-    discription: {tyep: String},
+    icon: {type: String},
+    name: {type: String},
+    discription: {type: String},
     tips: {type: String}
   }],
   items1: [{type: mongoose.SchemaTypes.ObjectId, ref: 'Item'}],
   items2: [{type: mongoose.SchemaTypes.ObjectId, ref: 'Item'}],
-  usageTips: {tyep: String},
-  battleTips: {tyep: String},
-  teamTips: {tyep: String},
+  usageTips: {type: String},
+  battleTips: {type: String},
+  teamTips: {type: String},
   partners: [{
-    // hero: {tyep: mongoose.SchemaTypes.ObjectId, ref: 'Hero'},
-    description: {tyep: String}
+    hero: {type: mongoose.SchemaTypes.ObjectId, ref: 'Hero'},
+    description: {type: String}
   }]
 })
 
